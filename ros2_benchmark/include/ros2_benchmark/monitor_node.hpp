@@ -55,6 +55,8 @@ public:
   /// Construct a new MonitorNode object with a custom node name.
   explicit MonitorNode(const std::string &, const rclcpp::NodeOptions &);
 
+  void CreatePowerSubscription();
+  
 protected:
   /// Create a generic type monitor subscriber.
   void CreateGenericTypeMonitorSubscriber();
